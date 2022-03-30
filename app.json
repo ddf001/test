@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/massage/massage",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/home_nonselected.png",
+        "selectedIconPath": "/images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/massage/massage",
+        "text": "消息",
+        "iconPath": "/images/msg_nonselected.png",
+        "selectedIconPath": "/images/msg_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my_nonselected.png",
+        "selectedIconPath": "/images/my_selected.png"
+      }
+    ]
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

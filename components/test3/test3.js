@@ -1,0 +1,54 @@
+// components/test3/test3.js
+Component({
+  /**
+   * 组件的属性列表
+   */
+  properties: {
+
+  },
+
+  /**
+   * 组件的初始数据
+   */
+  data: {
+    rgb:{
+      r:0,
+      g:0,
+      b:0
+    },
+    fullColor:'0,0,0'
+  },
+
+  /**
+   * 组件的方法列表
+   */
+  methods: {
+    changeR(){
+      this.setData({
+        'rgb.r':this.data.rgb.r+5>255?255:this.data.rgb.r+5
+      })
+      console.log(this.data.rgb.r)
+    },
+    changeG:function(){
+      this.setData({
+        
+      'rgb.g':this.data.rgb.g+5>255?255:this.data.rgb.g+5
+      })
+      console.log(this.data.rgb.g)
+    },
+    changeB:function(){
+      this.setData({
+        'rgb.b':this.data.rgb.b+5>255?255:this.data.rgb.b+5
+        })
+        console.log(this.data.rgb.b)
+    }
+   
+  },
+  observers:{
+    'rgb.**':function(obj){
+      this.setData({
+        fullColor:`${obj.r},${obj.g},${obj.b}` 
+      })
+    }
+  }
+})
